@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
-from pages.base_page import Page
+from pages.basepage import Page
 
 
 class Header(Page):
