@@ -1,8 +1,7 @@
-from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 from app.application import Application
-
+from selenium import webdriver
 
 def browser_init(context):
 
@@ -11,10 +10,9 @@ def browser_init(context):
     context.driver = webdriver.Chrome(service=service)
     context.driver.maximize_window()
     context.app = Application(context.driver)
-
     action = ActionChains()
 
-
+'''
 def before_scenario(context, scenario):
     print('\nStarted scenario: ', scenario.name)
     browser_init(context)
@@ -22,3 +20,5 @@ def before_scenario(context, scenario):
 
 def before_step(context, step):
     print('\nStarted step: ', step)
+    
+    '''

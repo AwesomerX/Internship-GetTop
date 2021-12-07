@@ -7,7 +7,7 @@ Feature: Test cases for wishlist functionality
     And Hover over first item
     And Hover over heart icon
     And Click heart icon to add to wishlist
-    Then Verify that correct item is shown in wishlist
+    Then Verify correct product in wishlist
 
 
   Scenario: Removing products from the wishlist
@@ -16,7 +16,7 @@ Feature: Test cases for wishlist functionality
     And Hover over first item
     And Hover over heart icon
     And Click heart icon to add to wishlist
-    And Verify that item is in wishlist
+    And Verify product is in wishlist
     Then Click the remove this product button
     Then Verify that product is removed from wishlist
 
@@ -27,7 +27,7 @@ Feature: Test cases for wishlist functionality
     And Hover over first item
     And Hover over heart icon
     And Click heart icon to add to wishlist
-    And Verify that item is in wishlist
+    And Verify product is in wishlist
     Then Click on product in wishlist
     Then Verify user is redirected to the correct product page
 
@@ -39,4 +39,4 @@ Feature: Test cases for wishlist functionality
     And Hover over heart icon
     And Click heart icon to add to wishlist
     Then Verify redirect to wishlist page
-    And Verify that social logos are shown on wishlist page
+    And Verify social logos shown on wishlist page

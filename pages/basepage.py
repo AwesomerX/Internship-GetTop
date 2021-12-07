@@ -4,7 +4,7 @@ class Page:
 
     def __init__(self, driver):
         self.driver = driver
-        self.base_url = 'https://gettop.us/'
+        self.base_url = ('https://gettop.us/')
 
     def click(self, *locator):
         self.driver.find_element(*locator).click()
