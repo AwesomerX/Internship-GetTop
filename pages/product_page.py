@@ -6,7 +6,7 @@ from pages.basepage import Page
 class Product_page(Page):
 
     FIRST_PRODUCT = (By.CSS_SELECTOR, 'div.product-small.has-hover.post-165')
-    HEART_ICON = (By.CSS_SELECTOR, 'button.wishlist-button')
+    HEART_ICON = (By.CSS_SELECTOR, 'div.wishlist-icon')
 
     def hover_over_first_item(self):
         lang = self.find_element(*self.FIRST_PRODUCT)

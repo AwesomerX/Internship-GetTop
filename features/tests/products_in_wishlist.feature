@@ -6,7 +6,9 @@ Feature: Test cases for wishlist functionality
     When Click on Mac in header
     And Hover over first item
     And Hover over heart icon
+    And Store product name
     And Click heart icon to add to wishlist
+    Then Click heart icon to browse wishlist
     Then Verify correct product in wishlist
 
 
@@ -15,10 +17,11 @@ Feature: Test cases for wishlist functionality
     When Click on Mac in header
     And Hover over first item
     And Hover over heart icon
+    And Store product name
     And Click heart icon to add to wishlist
     And Verify product is in wishlist
-    Then Click the remove this product button
-    Then Verify that product is removed from wishlist
+    Then Click remove this product button
+    Then Verify product is removed from wishlist
 
 
   Scenario: Verify user sees product page by clicking item in wishlist
@@ -26,6 +29,7 @@ Feature: Test cases for wishlist functionality
     When Click on Mac in header
     And Hover over first item
     And Hover over heart icon
+    And Store product name
     And Click heart icon to add to wishlist
     And Verify product is in wishlist
     Then Click on product in wishlist
@@ -37,6 +41,7 @@ Feature: Test cases for wishlist functionality
     When Click on Mac in header
     And Hover over first item
     And Hover over heart icon
+    And Store product name
     And Click heart icon to add to wishlist
     Then Verify redirect to wishlist page
     And Verify social logos shown on wishlist page

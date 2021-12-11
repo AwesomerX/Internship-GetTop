@@ -13,7 +13,6 @@ def browser_init(context):
     context.driver = webdriver.Chrome(ChromeDriverManager().install())
     context.driver.maximize_window()
     context.app = Application(context.driver)
-    action = ActionChains()
 
 
 def before_scenario(context, scenario):
