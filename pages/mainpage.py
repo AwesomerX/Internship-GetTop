@@ -5,5 +5,7 @@ from pages.basepage import Page
 
 class Mainpage(Page):
         def open_main_page(self):
-            self.open_page()
+ #         self.open_page()
+            self.url_open_main()
+
 

@@ -22,3 +22,6 @@ class Page:
         e = self.driver.find_element(*locator)
         e.clear()
         e.send_keys(text)
+
+    def url_open_main(self):
+        self.driver.get(self.base_url)

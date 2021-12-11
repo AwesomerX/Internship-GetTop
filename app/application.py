@@ -12,3 +12,5 @@ class Application:
         self.header = Header(self.driver)
         self.product_page = Product_page(self.driver)
         self.wishlist = Wishlist(self.driver)
+
+

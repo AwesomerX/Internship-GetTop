@@ -30,3 +30,4 @@ class Product_page(Page):
         actions.click()
         actions.perform()
         sleep(3)
+

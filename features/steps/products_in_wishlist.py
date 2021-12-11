@@ -14,7 +14,7 @@ SHARE = (By.CSS_SELECTOR, 'div.yith-wcwl-share.social-icons.share-icons.share-ro
 @given('Open GetTop homepage')
 def open_gettop_homepage(context):
     context.app.main_page.open_main_page()
-
+ #   context.app.main_page.
 
 
 # When
@@ -86,4 +86,6 @@ def verify_redirect_to_wishlist(context):
 @then('Verify social logos shown on wishlist page')
 def verify_social_logos_present(context):
     context.driver.find_element(SHARE)
+
+
 

@@ -40,3 +40,4 @@ Feature: Test cases for wishlist functionality
     And Click heart icon to add to wishlist
     Then Verify redirect to wishlist page
     And Verify social logos shown on wishlist page
+
