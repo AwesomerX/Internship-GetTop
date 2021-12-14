@@ -16,6 +16,7 @@ def open_gettop_homepage(context):
     context.app.main_page.open_main_page()
 
 
+
 # When
 
 @when('Click on Mac in header')
@@ -35,11 +36,11 @@ def hover_over_heart_icon(context):
 
 @when('Store product name')
 def store_product_name(context):
-    context.current_product_name = context.driver.find_element(By.CSS_SELECTOR, 'h1.product-title.product_title.entry-title')
+    context.current_product_name = context.driver.find_elements(By.CSS_SELECTOR, 'div.product-title.product_title.entry-title')
 
 @when('Click heart icon to add to wishlist')
 def click_heart_icon(context):
-    context.driver.find_element(By.CSS_SELECTOR, 'div.wishlist-icon')
+    context.driver.find_elements(By.CSS_SELECTOR, 'div.wishlist-icon')
 
 
 @when('Verify product is in wishlist')
@@ -59,7 +60,7 @@ def verify_correct_product_in_wishlist(context):
 
 @then('Click heart icon to browse wishlist')
 def click_heart_icon(context):
-    context.driver.find_element(By.CSS_SELECTOR, 'div.wishlist-icon')
+    context.driver.find_elements(By.CSS_SELECTOR, 'div.wishlist-icon')
 
 
 @then('Verify correct product in wishlist')
