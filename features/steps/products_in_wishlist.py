@@ -14,7 +14,6 @@ REMOVE_PRODUCT = (By.CSS_SELECTOR, 'a.remove.remove_from_wishlist')
 @given('Open GetTop homepage')
 def open_gettop_homepage(context):
     context.app.main_page.open_main_page()
- #   context.app.main_page.
 
 
 # When
